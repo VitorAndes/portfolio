@@ -1,0 +1,90 @@
+.container {
+  width: 350px;
+  height: 462px;
+}
+
+.card_header {
+  position: relative;
+  height: 154px;
+}
+
+.card_banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_avatar {
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+
+  width: 118px;
+  height: 118px;
+  border-radius: 100%;
+}
+
+.card_content {
+  margin-top: 70px;
+  margin-bottom: 22px;
+  padding: 0px 20px;
+}
+
+.card_content_name {
+  font-family: "Crimson", serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_content_role {
+  font-family: "Crimson", serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card_content_description {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+}
+
+.card_tech {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+}
+
+.card_tech_badge {
+  font-family: "Crimson", serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 16px;
+  border-radius: 4px;
+}
+
+.badge_one {
+  background-color: #006aff40;
+  border: 1px solid #006aff70;
+}
+
+.badge_two {
+  background-color: #00ff5540;
+  border: 1px solid #00ff5570;
+}
+
+.badge_three {
+  background-color: #5900ff40;
+  border: 1px solid #5900ff70;
+}
