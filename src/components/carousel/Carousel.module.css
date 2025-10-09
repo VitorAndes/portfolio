@@ -1,0 +1,125 @@
+.nav_hub {
+  width: 350px;
+  height: 58px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.nav_button {
+  background: transparent;
+  border: none;
+  font-family: "Crimson";
+  transition: border-bottom 500ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 0.5px solid var(--color-primary);
+  }
+}
+
+.carousel_container {
+  width: 350px;
+}
+
+.carousel_image {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.carousel_content {
+  padding: 15px 20px;
+}
+
+.content_infos {
+  h2 {
+    color: var(--color-primary);
+    font-family: "Crimson";
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+}
+
+.info_project {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  > div {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .project_link {
+    font-size: 12px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+
+    transition: all 0.3s ease-in-out;
+
+    > img {
+      width: 24px;
+      border-radius: 100%;
+    }
+  }
+
+  .project_link:after {
+    content: "";
+    pointer-events: none;
+    bottom: -10px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-secondary);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  .project_link:focus,
+  .project_link:hover {
+    color: var(--color-secondary);
+  }
+
+  .project_link:focus:after,
+  .project_link:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+.content_techs {
+  display: flex;
+  gap: 5px;
+  cursor: none;
+  user-select: none;
+
+  .badge {
+    border: 1px solid #7d00c470;
+    background: #7d00c440;
+    transition: all 0.3s ease-in-out;
+    font-family: "Crimson", serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 4px;
+  }
+
+  .badge:hover {
+    border: 0.5px solid var(--color-secondary);
+    background-color: var(--color-tertiary);
+  }
+}
