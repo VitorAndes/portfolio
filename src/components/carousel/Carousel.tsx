@@ -75,7 +75,7 @@ export function Carousel() {
                           rel="noopener noreferrer"
                           href={project.github}
                         >
-                          github <img src="svg/github.svg" />
+                          github <img src="svg/github.svg" alt="logo github" />
                         </a>
                         <a
                           className={style.project_link}
@@ -83,7 +83,7 @@ export function Carousel() {
                           rel="noopener noreferrer"
                           href={project.link}
                         >
-                          projeto <img src="svg/link.svg" />
+                          projeto <img src="svg/link.svg" alt="icon de link" />
                         </a>
                       </div>
                     </div>
