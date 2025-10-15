@@ -13,9 +13,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-primary: #7d00c4;
+  --color-primary: #a200ff;
   --color-secondary: #ffffff;
-  --color-card: #36333340;
+  --color-card: #36333320;
 }
 
 * {
@@ -24,12 +24,25 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/Inter-Regular.woff2") format("woff2");
+body {
+  margin: 0 auto;
+  width: 350px;
+  padding: 14px 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+    width: 1024px;
+  }
 }
 
 @font-face {
-  font-family: "Crimson", serif;
-  src: url("assets/fonts/CrimsonText-Bold.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("assets/fonts/Inter_18pt-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Title";
+  src: url("assets/fonts/RobotoMono-SemiBold.woff2") format("woff2");
 }

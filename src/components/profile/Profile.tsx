@@ -7,7 +7,7 @@ export function Profile() {
       <div className={styles.container}>
         <header className={styles.card_header}>
           <img
-            src="https://i.pinimg.com/736x/15/da/e6/15dae6ba313b6cf0fb447df726426973.jpg"
+            src="https://i.pinimg.com/736x/21/70/46/21704649a5e698cfe70a862e71784fb1.jpg"
             alt="banner"
             className={styles.card_banner}
           />

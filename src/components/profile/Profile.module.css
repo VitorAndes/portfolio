@@ -1,6 +1,6 @@
 .container {
   width: 350px;
-  height: 462px;
+  height: 480px;
 }
 
 .card_header {
@@ -22,39 +22,40 @@
   width: 118px;
   height: 118px;
   border-radius: 100%;
+  border: 1px solid var(--color-primary);
 }
 
 .card_content {
   margin-top: 70px;
   margin-bottom: 22px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .card_content_name {
-  font-family: "Crimson", serif;
+  font-family: "Title", sans-serif;
   font-size: 20px;
   margin-bottom: 5px;
   font-weight: bold;
 
   background: linear-gradient(
     to right,
-    var(--color-primary),
-    var(--color-secondary)
+    rgba(162, 0, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .card_content_role {
-  font-family: "Crimson", serif;
+  font-family: "Title", sans-serif;
   font-size: 14px;
   margin-bottom: 15px;
-  font-weight: bold;
 }
 
 .card_content_description {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: -0.1px;
   line-height: 20px;
 }
@@ -67,9 +68,8 @@
 }
 
 .card_tech_badge {
-  font-family: "Crimson", serif;
+  font-family: "Title", sans-serif;
   font-size: 12px;
-  font-weight: bold;
   padding: 4px 16px;
   border-radius: 4px;
 }

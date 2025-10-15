@@ -6,9 +6,16 @@ import { Technologies } from "./components/technologies/Technologies";
 export function App() {
   return (
     <main className={style.main}>
-      <Profile />
-      <SocialMedia />
-      <Carousel />
+      <div className={style.container}>
+        <section className={style.container_profile}>
+          <Profile />
+          <SocialMedia />
+        </section>
+        <section className={style.container_projects}>
+          <Carousel />
+        </section>
+      </div>
+
       <Technologies />
     </main>
   );
