@@ -1,21 +1,11 @@
 .card {
-  background-color: var(--color-card);
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 20px 4px 0 #00000025;
-}
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 20px 4px 0 #00000025;
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  padding: 0.6px;
-  background: linear-gradient(to bottom, #ffffff25, #7c00c490);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: 1;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#16161a, #16161a) padding-box,
+        linear-gradient(to bottom, #ffffff25, #7c00c490)
+            border-box;
 }

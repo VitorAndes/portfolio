@@ -1,18 +1,26 @@
 .container {
-  width: 350px;
-  height: 203px;
-  padding: 20px;
+    width: 350px;
+    height: 203px;
+    padding: 20px;
 }
 
 .socialMedia {
-  justify-content: center;
-  display: flex;
-  gap: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
 }
 
 .card_title {
-  font-family: "Title", serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 30px;
+    font-family: "Title", serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.animation {
+    transition: 1s ease-in-out 500ms;
+    @starting-style {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
 }

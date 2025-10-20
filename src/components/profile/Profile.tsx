@@ -3,11 +3,11 @@ import styles from "./Profile.module.css";
 
 export function Profile() {
   return (
-    <Card>
+    <Card animation={styles.animation}>
       <div className={styles.container}>
         <header className={styles.card_header}>
           <img
-            src="https://i.pinimg.com/736x/21/70/46/21704649a5e698cfe70a862e71784fb1.jpg"
+            src="/images/banner.avif"
             alt="banner"
             className={styles.card_banner}
           />
@@ -18,23 +18,35 @@ export function Profile() {
           />
         </header>
         <div className={styles.card_content}>
-          <h1 className={styles.card_content_name}>Vitor Andes</h1>
-          <p className={styles.card_content_role}>Software developer</p>
+          <h1 className={styles.card_content_name}>
+            Vitor Andes
+          </h1>
+          <p className={styles.card_content_role}>
+            Software developer
+          </p>
           <p className={styles.card_content_description}>
-            Front-end Developer especializado em React, TypeScript e Tailwind
-            CSS. Experiência em criar interfaces modernas, responsivas e
-            acessíveis, com foco em performance e boas práticas. Apaixonado por
-            design, usabilidade e desenvolvimento de soluções eficientes.
+            Front-end Developer especializado em React,
+            TypeScript e Tailwind CSS. Experiência em criar
+            interfaces modernas, responsivas e acessíveis,
+            com foco em performance e boas práticas.
+            Apaixonado por design, usabilidade e
+            desenvolvimento de soluções eficientes.
           </p>
         </div>
         <div className={styles.card_tech}>
-          <span className={`${styles.card_tech_badge} ${styles.badge_one}`}>
+          <span
+            className={`${styles.card_tech_badge} ${styles.badge_one}`}
+          >
             Front-end
           </span>
-          <span className={`${styles.card_tech_badge} ${styles.badge_two}`}>
+          <span
+            className={`${styles.card_tech_badge} ${styles.badge_two}`}
+          >
             Back-end
           </span>
-          <span className={`${styles.card_tech_badge} ${styles.badge_three}`}>
+          <span
+            className={`${styles.card_tech_badge} ${styles.badge_three}`}
+          >
             UI/UX
           </span>
         </div>

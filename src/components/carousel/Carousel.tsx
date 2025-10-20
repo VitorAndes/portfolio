@@ -23,20 +23,25 @@ export function Carousel() {
     const carousel = carouselRef.current;
     if (carousel) {
       const itemWidth = carousel.offsetWidth;
-      const newIndex = Math.round(carousel.scrollLeft / itemWidth);
+      const newIndex = Math.round(
+        carousel.scrollLeft / itemWidth,
+      );
       setCurrentIndex(newIndex);
     }
   };
 
   return (
     <>
-      <Card>
+      <Card animation={style.animation_nav}>
         <nav className={style.nav_hub}>
           {ProjectsData.map((project, index) => {
             return (
               <button
+                type="button"
                 className={`${style.nav_button} ${
-                  currentIndex === index ? style.nav_button_active : ""
+                  currentIndex === index
+                    ? style.nav_button_active
+                    : ""
                 }`}
                 key={project.title}
                 onClick={() => scrollToProject(index)}
@@ -55,8 +60,11 @@ export function Carousel() {
         onScroll={handleScroll}
       >
         {ProjectsData.map((project) => (
-          <div key={project.title} className={style.carousel_item}>
-            <Card>
+          <div
+            key={project.title}
+            className={style.carousel_item}
+          >
+            <Card animation={style.animation_project}>
               <div className={style.carousel_container}>
                 <img
                   className={style.carousel_image}
@@ -75,7 +83,11 @@ export function Carousel() {
                           rel="noopener noreferrer"
                           href={project.github}
                         >
-                          github <img src="svg/github.svg" alt="logo github" />
+                          github{" "}
+                          <img
+                            src="svg/github.svg"
+                            alt="logo github"
+                          />
                         </a>
                         <a
                           className={style.project_link}
@@ -83,7 +95,11 @@ export function Carousel() {
                           rel="noopener noreferrer"
                           href={project.link}
                         >
-                          projeto <img src="svg/link.svg" alt="icon de link" />
+                          projeto{" "}
+                          <img
+                            src="svg/link.svg"
+                            alt="icon de link"
+                          />
                         </a>
                       </div>
                     </div>
@@ -91,7 +107,10 @@ export function Carousel() {
                   </div>
                   <div className={style.content_techs}>
                     {project.techs.map((tech) => (
-                      <span key={tech} className={style.badge}>
+                      <span
+                        key={tech}
+                        className={style.badge}
+                      >
                         <p>{tech}</p>
                       </span>
                     ))}

@@ -4,10 +4,15 @@ import style from "./Technologies.module.css";
 
 export function Technologies() {
   return (
-    <Card>
+    <Card animation={style.animation}>
       <div className={style.technologies_container}>
         {technologiesData.map((tech) => (
-          <img key={tech.id} draggable={false} src={tech.icon} alt={tech.alt} />
+          <img
+            key={tech.id}
+            draggable={false}
+            src={tech.icon}
+            alt={tech.alt}
+          />
         ))}
       </div>
     </Card>

@@ -1,48 +1,52 @@
 :root {
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family:
+        "Inter", system-ui, Avenir, Helvetica, Arial,
+        sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #16161a;
-  background-image: url("/images/wallpaper.png");
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #16161a;
+    background-image: url("/images/wallpaper.avif");
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  --color-primary: #a200ff;
-  --color-secondary: #ffffff;
-  --color-card: #36333320;
+    --color-primary: #a200ff;
+    --color-secondary: #ffffff;
+    --color-card: #36333320;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  width: 350px;
-  padding: 14px 0;
+    margin: 0 auto;
+    width: 350px;
+    padding: 14px 0;
 }
 
 @media (min-width: 1024px) {
-  body {
-    padding: 0;
-    width: 1024px;
-  }
+    body {
+        padding: 0;
+        width: 1024px;
+    }
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("assets/fonts/Inter_18pt-Regular.woff2") format("woff2");
+    font-family: "Inter";
+    src: url("assets/fonts/Inter_18pt-Regular.woff2")
+        format("woff2");
 }
 
 @font-face {
-  font-family: "Title";
-  src: url("assets/fonts/RobotoMono-SemiBold.woff2") format("woff2");
+    font-family: "Title";
+    src: url("assets/fonts/RobotoMono-SemiBold.woff2")
+        format("woff2");
 }
