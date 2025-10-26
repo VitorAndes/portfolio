@@ -40,13 +40,15 @@ body {
 }
 
 @font-face {
-    font-family: "Inter";
+    font-display: swap;
+    font-family: "Inter", sans-serif;
     src: url("assets/fonts/Inter_18pt-Regular.woff2")
         format("woff2");
 }
 
 @font-face {
-    font-family: "Title";
+    font-display: swap;
+    font-family: "Title", sans-serif;
     src: url("assets/fonts/RobotoMono-SemiBold.woff2")
         format("woff2");
 }

@@ -7,11 +7,13 @@ export function Profile() {
       <div className={styles.container}>
         <header className={styles.card_header}>
           <img
+            fetchPriority="high"
             src="/images/banner.avif"
             alt="banner"
             className={styles.card_banner}
           />
           <img
+            fetchPriority="high"
             src="/images/avatar.avif"
             alt="foto do vitor andes"
             className={styles.card_avatar}
