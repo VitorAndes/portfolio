@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import style from "./App.module.css";
 import { Carousel } from "./components/carousel/Carousel";
 import { Profile } from "./components/profile/Profile";
@@ -17,6 +18,7 @@ export function App() {
       </div>
 
       <Technologies />
+      <Analytics />
     </main>
   );
 }
