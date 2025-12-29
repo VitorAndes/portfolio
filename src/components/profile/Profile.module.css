@@ -32,7 +32,7 @@
 }
 
 .card_content_name {
-    font-family: "Title", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -48,15 +48,15 @@
 }
 
 .card_content_role {
-    font-family: "Title", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
 .card_content_description {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
-    letter-spacing: -0.1px;
+    font-size: 16px;
+    letter-spacing: .1px;
     line-height: 20px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .card_tech_badge {
-    font-family: "Title", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     padding: 4px 16px;
     border-radius: 4px;

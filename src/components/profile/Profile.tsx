@@ -27,12 +27,11 @@ export function Profile() {
             Software developer
           </p>
           <p className={styles.card_content_description}>
-            Front-end Developer especializado em React,
+            Fullstack Developer especializado em React,
             TypeScript e Tailwind CSS. Experiência em criar
             interfaces modernas, responsivas e acessíveis,
             com foco em performance e boas práticas.
-            Apaixonado por design, usabilidade e
-            desenvolvimento de soluções eficientes.
+           
           </p>
         </div>
         <div className={styles.card_tech}>

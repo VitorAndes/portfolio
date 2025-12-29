@@ -48,7 +48,7 @@ body {
 
 @font-face {
     font-display: swap;
-    font-family: "Title", sans-serif;
+    font-family: "Roboto", sans-serif;
     src: url("assets/fonts/RobotoMono-SemiBold.woff2")
         format("woff2");
 }
