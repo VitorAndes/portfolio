@@ -8,9 +8,5 @@ export function Card({
   children: ReactNode;
   animation?: string;
 }) {
-  return (
-    <div className={`${styles.card} ${animation}`}>
-      {children}
-    </div>
-  );
+  return <div className={`${styles.card} ${animation}`}>{children} </div>;
 }

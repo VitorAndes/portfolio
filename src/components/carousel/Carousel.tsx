@@ -82,11 +82,11 @@ export function Carousel() {
                           target="_blank"
                           rel="noopener noreferrer"
                           href={project.github}
+                          aria-label="acessar github do projeto"
                         >
-                          github{" "}
                           <img
                             src="svg/github.svg"
-                            alt="logo github"
+                            alt=""
                           />
                         </a>
                         <a
@@ -94,12 +94,9 @@ export function Carousel() {
                           target="_blank"
                           rel="noopener noreferrer"
                           href={project.link}
+                          aria-label="acessar o projeto"
                         >
-                          projeto{" "}
-                          <img
-                            src="svg/link.svg"
-                            alt="icon de link"
-                          />
+                          <img src="svg/link.svg" alt="" />
                         </a>
                       </div>
                     </div>
@@ -107,12 +104,14 @@ export function Carousel() {
                   </div>
                   <div className={style.content_techs}>
                     {project.techs.map((tech) => (
-                      <span
-                        key={tech}
-                        className={style.badge}
-                      >
-                        <p>{tech}</p>
-                      </span>
+                      <div className={style.tech_item}>
+                        <img
+                          width="32"
+                          height="32"
+                          src={`/svg/technologies/${tech}.svg`}
+                          alt={tech}
+                        />
+                      </div>
                     ))}
                   </div>
                 </div>

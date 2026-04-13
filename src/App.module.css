@@ -1,38 +1,38 @@
 @import "index.css";
 
 main {
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 .container {
-  gap: 10px;
+    gap: 10px;
 }
 
 .container section {
-  margin: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .container .container_projects {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
-  main {
-    display: flex;
-    padding: 16px;
-  }
-
-  .container {
-    display: flex;
-    height: 690px;
-    section {
-      margin: 0px;
+    main {
+        display: flex;
+        padding: 16px;
     }
-  }
+
+    .container {
+        display: flex;
+        height: 610px;
+        section {
+            margin: 0px;
+        }
+    }
 }
