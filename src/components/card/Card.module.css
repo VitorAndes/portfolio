@@ -1,11 +1,9 @@
 .card {
-  overflow: hidden;
+    overflow: hidden;
 
-  box-shadow: 0 20px 4px 0 #00000025;
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  border: 0.5px solid rgba(255, 255, 255, 0.126);
-  background: var(--color-card);
-  box-shadow: 0 20px 4px 0 rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 0.5px solid rgba(255, 255, 255, 0.126);
+    background: var(--color-card);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.5);
 }

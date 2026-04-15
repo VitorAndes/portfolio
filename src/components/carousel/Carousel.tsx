@@ -23,9 +23,7 @@ export function Carousel() {
     const carousel = carouselRef.current;
     if (carousel) {
       const itemWidth = carousel.offsetWidth;
-      const newIndex = Math.round(
-        carousel.scrollLeft / itemWidth,
-      );
+      const newIndex = Math.round(carousel.scrollLeft / itemWidth);
       setCurrentIndex(newIndex);
     }
   };
@@ -39,9 +37,7 @@ export function Carousel() {
               <button
                 type="button"
                 className={`${style.nav_button} ${
-                  currentIndex === index
-                    ? style.nav_button_active
-                    : ""
+                  currentIndex === index ? style.nav_button_active : ""
                 }`}
                 key={project.title}
                 onClick={() => scrollToProject(index)}
@@ -60,10 +56,7 @@ export function Carousel() {
         onScroll={handleScroll}
       >
         {ProjectsData.map((project) => (
-          <div
-            key={project.title}
-            className={style.carousel_item}
-          >
+          <div key={project.title} className={style.carousel_item}>
             <Card animation={style.animation_project}>
               <div className={style.carousel_container}>
                 <img
@@ -84,10 +77,7 @@ export function Carousel() {
                           href={project.github}
                           aria-label="acessar github do projeto"
                         >
-                          <img
-                            src="svg/github.svg"
-                            alt=""
-                          />
+                          <img src="svg/github.svg" alt="" />
                         </a>
                         <a
                           className={style.project_link}
@@ -104,7 +94,7 @@ export function Carousel() {
                   </div>
                   <div className={style.content_techs}>
                     {project.techs.map((tech) => (
-                      <div className={style.tech_item}>
+                      <div key={tech} className={style.tech_item}>
                         <img
                           width="32"
                           height="32"

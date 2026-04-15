@@ -15,9 +15,10 @@
 }
 
 .animation {
-    transition: 1s ease-in-out 500ms;
+    transition: 1s ease-in-out 200ms;
     @starting-style {
         opacity: 0;
-        transform: translateX(-50px);
+        scale: 0.9;
+        transform: translateY(-50px);
     }
 }
